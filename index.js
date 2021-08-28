@@ -18,11 +18,10 @@ const mongoose = require('mongoose');
 const socketio = require('socket.io')
 const io = socketio(http);
 const mongoDB = "mongodb+srv://ujjwaljamuar:Ujjwaljam123@cluster0.yzzav.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('connected')).catch(err => console.log(err))
 const { addUser, getUser, removeUser } = require('./helper');
 const Message = require('./models/Message');
 const PORT = process.env.PORT || 5000;
-mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => app.listen(PORT , () => console.log('connected'))).catch(err => console.log(err))
 const Room = require('./models/Room');
 
 app.get('/set-cookies', (req, res) => {
