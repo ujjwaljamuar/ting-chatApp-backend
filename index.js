@@ -32,7 +32,7 @@ const Room = require("./models/Room");
 
 app.get("/", (req, res) => {
     res.json("Backend Server is running successfully...");
-  });
+});
 
 app.get("/set-cookies", (req, res) => {
     res.cookie("username", "Tony");
