@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 var corsOptions = {
-    origin: "https://ting-chat-app-backend.vercel.app",
+    origin: "http://localhost:3000",
     credentials: true,
     optionsSuccessStatus: 200, // For legacy browser support
 };
