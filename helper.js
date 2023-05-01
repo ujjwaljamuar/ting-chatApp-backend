@@ -1,3 +1,8 @@
+const express = require("express");
+const app = express();
+const cors = require("cors");
+app.use(cors());
+
 const users = [];
 const addUser = ({ socket_id, name, user_id, room_id }) => {
     const exist = users.find(

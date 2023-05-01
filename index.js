@@ -9,7 +9,7 @@ var corsOptions = {
     optionsSuccessStatus: 200, // For legacy browser support
 };
 const authRoutes = require("./routes/authRoutes");
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use(authRoutes);
