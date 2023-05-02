@@ -1,8 +1,3 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-app.use(cors());
-
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const maxAge = 5 * 24 * 60 * 60;
