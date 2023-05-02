@@ -7,7 +7,7 @@
             "src": "/(.*)",
             "dest": "/index.js",
             "headers": {
-                "Access-Control-Allow-Origin": "http://ting-chat-app-backend.vercel.app",
+                "Access-Control-Allow-Origin": "https://ting-chat-app-frontend.vercel.app",
                 "Access-Control-Allow-Methods": "GET, POST"
             }
         }
